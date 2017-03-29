@@ -1,0 +1,31 @@
+    <section class="suite">
+      <h1>Membership application requirements</h1>
+      <dl>
+        <section class="suite">
+          <h1>Application valid if...</h1>
+          <dl>
+            <dt>application is valid if all validators return true</dt>
+            <dd><pre><code>assert(validApp.isValid(), 'Not valid')</code></pre></dd>
+            <dt>email is 4 or more chars and contains an @</dt>
+            <dd><pre><code>assert(validApp.emailIsValid(), 'email not valid')</code></pre></dd>
+            <dt>height is between 60 and 75 inches</dt>
+            <dd><pre><code>assert(validApp.heightIsValid(), 'height not valid')</code></pre></dd>
+            <dt>age is between 15 and 100 years</dt>
+            <dd><pre><code>assert(validApp.ageIsValid(), 'age not valid')</code></pre></dd>
+            <dt>weight is between 100 and 300 pounds</dt>
+            <dd><pre><code>assert(validApp.weightIsValid(), 'weight not valid')</code></pre></dd>
+            <dt>first and last name are provided</dt>
+            <dd><pre><code>assert(validApp.nameIsValid(), 'name not valid')</code></pre></dd>
+          </dl>
+        </section>
+        <section class="suite">
+          <h1>Application invalid if...</h1>
+          <dl>
+            <dt class="error">email is 4 characters or less</dt>
+            <dd class="error"><pre><code>validApp.email = 'd@d4'
+assert(!validApp.emailIsValid())</code></pre></dd>
+            <dd class="error">AssertionError: false == true</dd>
+          </dl>
+        </section>
+      </dl>
+    </section>

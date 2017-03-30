@@ -30,7 +30,7 @@ configuration goes into mocha.opts in the test directory
 
 ### IDE support
 
-Mocha is broadly supported by editors and IDEs. With Webstorm you can easily create a [run configuration](https://www.jetbrains.com/help/phpstorm/2016.1/running-mocha-unit-tests.html) the tests automatically 
+Mocha is broadly supported by editors and IDEs. With Webstorm you can easily create a [run configuration](https://www.jetbrains.com/help/phpstorm/2016.1/running-mocha-unit-tests.html) and run the tests automatically 
 (if they don't take too long you can even have a live testing by setting the [AutoTest](https://www.jetbrains.com/help/webstorm/2017.1/test-runner-tab.html) delay to 1s)
 
 ### asynchronous tests / setup
